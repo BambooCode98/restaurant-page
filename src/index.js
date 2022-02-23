@@ -20,19 +20,19 @@ const contactPage = document.querySelector('.page2');
 
 about.addEventListener('click', function() {
   aboutPage.style.visibility = 'visible';
-  menuPage.style.visibility = 'hidden';
+  menuPage.style.display = "none";
   contactPage.style.visibility = 'hidden';
 })
 
 menu.addEventListener('click', function() {
   aboutPage.style.visibility = 'hidden';
-  menuPage.style.visibility = 'visible';
+  menuPage.style.display = 'block';
   contactPage.style.visibility = 'hidden';
 })
 
 contact.addEventListener('click', function() {
   aboutPage.style.visibility = 'hidden';
-  menuPage.style.visibility = 'hidden';
+  menuPage.style.display = "none";
   contactPage.style.visibility = 'visible';
 })
 

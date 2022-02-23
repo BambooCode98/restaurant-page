@@ -10,15 +10,19 @@ body{
   justify-content: space-between;
   align-items: center;
   flex-flow: column;
+  background-color: rgb(80, 168, 80);
 }
 
 #page{
   display: grid;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
-  /* justify-content: flex-start;
-  align-items: center;
-  flex-flow: column; */
+}
+
+.page0, .page1, .page2{
+  grid-column: 1;
+  grid-row: 1;
+  background-color: white;
 }
 
 .header{
@@ -28,6 +32,17 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 45px;
+}
+
+.headerMenu{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 8px 8px rgba(112, 112, 121, 0.25);
 }
 
 .tabBox{
@@ -48,48 +63,66 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 15px;
-  font-style: oblique;
+  font-weight: bold;
   cursor: pointer;
+}
+
+.tabs0:hover, .tabs1:hover, .tabs2:hover{
+  background-color: rgba(50, 122, 77, 0.637);
+  border-color: rgba(50, 122, 77, 0.637);
 }
 
 .page0{
   visibility: visible;
 }
 
-.tabs1{
-  list-style-type: none;
-  padding: 5px;
-  border: 2px rgba(10, 201, 89, 0.788) solid;
-  border-bottom: none;
-  background-color: rgba(10, 201, 89, 0.788);
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  font-style: oblique;
-  cursor: pointer;
-}
-
 .page1{
-  visibility: hidden;
-}
-
-.tabs2{
-  list-style-type: none;
-  padding: 5px;
-  border: 2px rgba(10, 201, 89, 0.788) solid;
-  border-bottom: none;
-  background-color: rgba(10, 201, 89, 0.788);
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  font-style: oblique;
-  cursor: pointer;
+  /* visibility: hidden; */
+  display: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .page2{
   visibility: hidden;
+}
+
+.info1, .info2{
+  margin: 0px 25%;
+  height: 80%;
+  font-family: fantasy;
+  font-size: 24px;
+}
+
+.info2{
+ border: 2px green solid;
+}
+
+.catalogue{
+  font-size: 12px;
+  display: grid;
+  border: red 2px solid;
+  gap: 10px;
+  padding: 20px;
+  height: 1000%;
+  display: flex;
+  flex: 2 1 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plantList0, .plantList2, .plantList3, .plantList1{
+  border: green 2px solid;
+  height: 10px;
+  width:45px;
+}
+
+.message1{
+  border: black solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(133, 216, 133, 0.925);
+  height: 80%;
+  padding: 15px;
+  text-align: center;
 }

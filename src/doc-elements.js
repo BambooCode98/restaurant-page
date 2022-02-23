@@ -5,7 +5,7 @@ const tabBox = document.createElement('div');
   tabBox.classList.add('tabBox');
 // create tabs  
 let tab1 = "About";
-let tab2 = "Menu";
+let tab2 = "Catalogue";
 let tab3 = "Contact";
 export let tabs = [tab1, tab2, tab3];
 
