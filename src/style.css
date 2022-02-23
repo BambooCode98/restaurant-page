@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#content{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+
+#page{
+  display: grid;
+  height: 80vh;
+  width: 100%;
+  /* justify-content: flex-start;
+  align-items: center;
+  flex-flow: column; */
+}
+
+.header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabBox{
+  display: flex;
+  width: 55%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tabs0, .tabs1, .tabs2{
+  list-style-type: none;
+  padding: 5px;
+  border: 2px rgba(10, 201, 89, 0.788) solid;
+  border-bottom: none;
+  background-color: rgba(10, 201, 89, 0.788);
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-style: oblique;
+  cursor: pointer;
+}
+
+.page0{
+  visibility: visible;
+}
+
+.tabs1{
+  list-style-type: none;
+  padding: 5px;
+  border: 2px rgba(10, 201, 89, 0.788) solid;
+  border-bottom: none;
+  background-color: rgba(10, 201, 89, 0.788);
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-style: oblique;
+  cursor: pointer;
+}
+
+.page1{
+  visibility: hidden;
+}
+
+.tabs2{
+  list-style-type: none;
+  padding: 5px;
+  border: 2px rgba(10, 201, 89, 0.788) solid;
+  border-bottom: none;
+  background-color: rgba(10, 201, 89, 0.788);
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-style: oblique;
+  cursor: pointer;
+}
+
+.page2{
+  visibility: hidden;
+}
