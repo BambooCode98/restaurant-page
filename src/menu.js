@@ -1,5 +1,9 @@
 'use strict';
 
+import Parvifolia from './parvifolia.jpg';
+import Shoot from './aureosulcataShoot.jpg';
+import Yellowgroove from './yellowgroove.jpg';
+
 const page = document.querySelector('#page');
 const menu = document.createElement('div');
 const menuHeader = document.createElement('h3');
@@ -10,6 +14,16 @@ menuHeader.classList.add('headerMenu');
 menu.classList.add('page1');
 catalogue.classList.add('catalogue');
 menuInfo.classList.add('info2');
+
+//add images
+const parv = new Image();
+parv.src = Parvifolia;
+
+const groove = new Image();
+groove.src = Yellowgroove;
+
+const shoot = new Image();
+shoot.src = Shoot;
 
 //add page header
 menuHeader.textContent = "Catalogue";
@@ -25,11 +39,21 @@ let plant1 = "Aureosulcata";
 let plant2 = "Parvifolia";
 let plant3 = "Nigra: 'Henon'";
 let plant4 = "Aurea";
-let plantCatalogue = [plant1, plant2, plant3, plant4];
+let plant5 = "Sweet Shoot";
+let plantCatalogue = [plant1, plant2, plant3, plant4, plant5];
 
 for(let i = 0; i < plantCatalogue.length; i++) {
-  let plantCard = document.createElement('div');
+  const plantCard = document.createElement('div');
+  const cardHead = document.createElement('h4');
+  let image = document.createElement('div');
+  
   plantCard.classList.add('plantList' + [i]);
-  plantCard.textContent = plantCatalogue[i];
+  image.classList.add('image' + [i]);
+  cardHead.classList.add('cardhead');
+
   catalogue.append(plantCard);
+  plantCard.append(cardHead);
+  plantCard.append(image);
+  cardHead.textContent = plantCatalogue[i];
 }
+
