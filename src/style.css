@@ -140,6 +140,7 @@ body{
 .image0, .image1, .image2, .image3, .image4 {
   border: solid black 2px;
   margin: 5px;
+  margin-bottom: 20px;
   border-radius: 2px;
 }
 
