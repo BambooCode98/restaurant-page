@@ -1,6 +1,7 @@
 'use strict';
 
 const page = document.querySelector('#page');
+const footer = document.querySelector('#footer');
 const contact = document.createElement('div');
 const contactHeader = document.createElement('h3');
 const contactInfo = document.createElement('div');

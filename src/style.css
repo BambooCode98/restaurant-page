@@ -11,6 +11,7 @@ body{
   align-items: center;
   flex-flow: column;
   background-color: rgb(80, 168, 80);
+  border-bottom: 5px solid darkgreen;
 }
 
 #page{
@@ -191,4 +192,15 @@ body{
   background-size: cover;
   height: 95%;
   width: 90%;
+}
+
+#footer{
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  height: 100px;
+  /* word-wrap: normal; */
+  width: 100px;
+  font-size: 15px;
+  color: white;
 }

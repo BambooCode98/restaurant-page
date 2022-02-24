@@ -5,6 +5,7 @@ import Shoot from './aureosulcataShoot.jpg';
 import Yellowgroove from './yellowgroove.jpg';
 
 const page = document.querySelector('#page');
+const footer = document.querySelector('#footer');
 const menu = document.createElement('div');
 const menuHeader = document.createElement('h3');
 const menuInfo = document.createElement('div');
