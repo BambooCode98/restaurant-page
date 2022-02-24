@@ -79,7 +79,6 @@ body{
 }
 
 .page1{
-  /* visibility: hidden; */
   display: none;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -92,7 +91,7 @@ body{
 .info1, .info2, .info3{
   margin: 0px 25%;
   height: 80%;
-  font-family: fantasy;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
 }
 
@@ -103,12 +102,10 @@ body{
 .catalogue{
   font-size: 12px;
   display: grid;
-  /* border: red 2px solid; */
   gap: 10px;
   padding: 20px;
   height: 450%;
   display: flex;
-  /* flex: 2 1 auto; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -156,7 +153,7 @@ body{
 
 .cardhead{
   font-size: 20px;
-  font-family: fantasy;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
 }
@@ -169,7 +166,7 @@ body{
 }
 
 .image1{
-  background: url(parvifolia.jpg);
+  background: url(yellowgroove.jpg);
   background-size: cover;
   height: 95%;
   width: 90%;
